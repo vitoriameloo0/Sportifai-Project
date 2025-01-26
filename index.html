@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- Meta tags Obrigatórias -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
+  <!-- Estilo customizado -->
+  <link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+  <!-- Definir o titulo da pagina e o icone que aparece no inicio da pagina -->
+  <title>Música para todos - Sportifai</title>
+  <link rel="icon" href="imagens/icon.png">
+
+</head>
+
+
+<body onresize="console.log('Tamanho da tela: ' + window.innerWidth)">
+
+  <head> <!-- Inicio do Cabeçalho (Essa parte sera a barra que fica parada no topo)-->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-transparente">
+
+      <div class="container">
+        <!-- Define uma imagem no inicio do container e que quando o usuario clicar no icone, ele retorna pra pagina inicial-->
+        <a href="index.html" class="navbar-brand">
+          <img src="imagens/sport.svg" width="175">
+        </a>
+
+        <!-- Um botão que serve para quando o usuario diminuir a tela, os itens do menu apareça quando ela clicar no botão-->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+          <i class="fas fa-bars text-white"></i>
+        </button>
+
+        <!-- Lista de itens que irão aparecer no menu superior-->
+        <div class="collapse navbar-collapse" id="nav-principal">
+          <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item">
+              <a href="" class="nav-link">Premium</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="" class="nav-link">Ajuda</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="" class="nav-link">Baixar</a>
+            </li>
+
+            <li class="nav-item divisor"></li>
+
+            <li class="nav-item">
+              <a href="inscrever.html" class="nav-link">Inscrever-se</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="login.html" class="nav-link">Entrar</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </head> <!-- Fim do Cabeçalho-->
+
+
+  <!-- Segunda parte da tela que ira exibir partes para o usuario escolher se aproveitar e obter o spotify-->
+  <section id="home" class="d-flex"> <!-- Inicio da sessão HOME-->
+
+    <div class="container align-self-center">
+        <div class="row">
+            <div class="col-md-12 capa">
+                <!-- Implementa um carousel que ficará trocando informações -->
+                <div id="carousel-spotify" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner"> <!-- Inner é a parte que irá ficar trocando as informações-->
+
+                        <div class="carousel-item active">
+                            <h1> Música para todos </h1>
+
+                            <a href="#" class="btn btn-lg btn-custom btn-roxo"
+                               data-toggle="modal" data-target="#infoModal">
+                               Aproveite o Sportifai Free
+                            </a>
+
+                            <a href="#" class="btn btn-lg btn-custom btn-branco"
+                               data-toggle="modal" data-target="#infoModal">
+                               Obter Sportifai Free
+                            </a>
+                        </div>
+
+                        <div class="carousel-item">
+                            <h1> As Top 5 das paradas </h1>
+                            <a href="top5dasParadas.html" class="btn btn-lg btn-custom btn-branco">
+                                <i class="fas fa-music"></i> Veja agora
+                            </a>
+                        </div>
+
+                    </div> <!-- /Inner-->
+
+                    <!-- Controles do carousel -->
+                    <a class="carousel-control-prev" href="#carousel-spotify" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-spotify" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Próximo</span>
+                    </a>
+                </div> <!-- Fim do carousel-->
+            </div>
+        </div>
+    </div>
+</section> <!-- Fim da sessão HOME -->
+
+<!-- Modal -->
+<div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="infoModalLabel">Informações do Sportifai Free</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Sportifai Free oferece uma ampla gama de músicas para você ouvir sem custo. Aproveite suas playlists, descubra novos artistas e muito mais!</p>
+        <p>O Sportifai Free tem anúncios, mas você pode aproveitar todas as funcionalidades para curtir sua música favorita em qualquer lugar.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-primary"
+        onclick="alert('Esta página ainda não foi implementada :)')">Saiba Mais</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <section id="servicos" class="caixa"> <!-- Inicio da sessão de SERVIÇO -->
+    <!-- Nessa parte sera configurado para que seja um container branco em que na esquerda possua algumas imagens e na direita tenha alguns textos formatados-->
+    <div class="container">
+      <div class="row"> <!-- As row facilita para que um conteudo fico um do lado do outro-->
+
+        <div class="col-md-6">
+          <!-- Essa div faz tem o acrescimos das imagens no site de forma que tenha 4 imagens, sendo 2x2-->
+          <div class="row albuns">
+            <div class="col-md-6">
+              <img src="imagens/img1.jpg" class="img-fluid d-none d-md-block">
+              <!-- a classe d-none d-md-block serve para ocultar as imagens quando a tela estiver bem pequena-->
+            </div>
+            <div class="col-md-6">
+              <img src="imagens/img2.jpg" class="img-fluid d-none d-md-block">
+            </div>
+          </div>
+          <div class="row albuns">
+            <div class="col-md-6">
+              <img src="imagens/img3.jpg" class="img-fluid d-none d-md-block">
+            </div>
+            <div class="col-md-6">
+              <img src="imagens/img4.jpg" class="img-fluid d-none d-md-block">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6"> <!-- Essa div irá fazer a formatação dos textos que irão ficar do lado direito-->
+          <h2>O que o Sportifai tem?</h2>
+
+          <h3>Músicas</h3>
+          <p>O Sportifai tem milhões de músicas. Escute seus sons favoritos, descubra novas músicas e reúna seus
+            favoritos em um só lugar.</p>
+
+          <h3>Playlists</h3>
+          <p>No Sportifai você encontra uma playlist para cada momento. Todas feitas por fanáticos e especialistas da
+            música.</p>
+
+          <h3>Novos lançamentos</h3>
+          <p>Escute os novos lançamentos de singles e álbuns da semana e veja o que está bombando no Top 50.</p>
+        </div>
+
+      </div>
+    </div>
+  </section> <!-- Fim da sessão SERVIÇO -->
+
+
+  <section id="recursos" class="caixa"> <!-- Inicio da sessão Recurso-->
+    <!-- Nessa parte sera configurado para que seja um container que possui textos a esquena e imagens levemente deitadas para um angulo-->
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-4">
+          <!-- Aqui sera configurado os textos desse container, ela possui apenas 4 colunas pois a quantidade de texto é menor-->
+          <h2>Fácil</h2>
+
+          <h3>Buscar</h3>
+          <p>Já sabe o que quer escurtar? É só procurar e apertar o play.</p>
+
+          <h3>Navegar</h3>
+          <p>Veja os novos lançamentos, o qeu está bombando nas paradas e as melhores playlists para o seu momento.</p>
+
+          <h3>Descobrir</h3>
+          <p>Curta músicas novas toda segunda-feira com uma playlist personalizada para você. Ou relaxe e curta uma das
+            rádios.</p>
+        </div>
+
+        <div class="col-md-8"> <!-- Aqui será definido as imagens dessa aplicação-->
+          <div class="row rotacionar">
+            <!-- A partir daqui consegue fazer a rotação das duas imagens como se ela fosse uma só-->
+
+            <div class="col-md-6">
+              <img src="imagens/iphone1.png" class="d-none d-md-block">
+            </div>
+            <div class="col-md-6">
+              <img src="imagens/iphone2.png" class="d-none d-md-block">
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section> <!-- Fim da sessão Recurso-->
+
+
+  <footer> <!-- Inicio do Footer-->
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-2">
+          <img src="imagens/sport.svg" width="175">
+        </div>
+
+        <div class="col-md-2">
+          <h4>company</h4>
+          <ul class="navbar-nav">
+            <li><a href="" onclick="alert('Esta pagina ainda não foi implementada :)')">Sobre</a></li>
+            <li><a href="" onclick="alert('Esta pagina ainda não foi implementada :)')">Empregos</a></li>
+            <li><a href="" onclick="alert('Esta pagina ainda não foi implementada :)')">Imprensa</a></li>
+            <li><a href="" onclick="alert('Esta pagina ainda não foi implementada :)')">Novidades</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-2">
+          <h4>comunidades</h4>
+          <ul class="navbar-nav">
+            <li><a href="" onclick="alert('Esta pagina ainda não foi implementada :)')">Artistas</a></li>
+            <li><a href="" onclick="alert('Esta pagina ainda não foi implementada :)')">Desenvolvedores</a></li>
+            <li><a href="" onclick="alert('Esta pagina ainda não foi implementada :)')">Marcas</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-2">
+          <h4>Links uteis</h4>
+          <ul class="navbar-nav">
+            <li><a href="" onclick="alert('Esta pagina ainda não foi implementada :)')">Ajuda</a></li>
+            <li><a href="" onclick="alert('Esta pagina ainda não foi implementada :)')">Presentes</a></li>
+            <li><a href="" onclick="alert('Esta pagina ainda não foi implementada :)')">Player da web</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4">
+          <ul>
+            <li>
+              <a href=""><img src="imagens/facebook.png"></a>
+            </li>
+            <li>
+              <a href=""><img src="imagens/twitter.png"></a>
+            </li>
+            <li>
+              <a href=""><img src="imagens/instagram.png"></a>
+            </li>
+          </ul>
+        </div>
+
+
+      </div>
+    </div>
+
+  </footer> <!-- Fim do Footer-->
+
+
+  <!-- JavaScript (Opcional) -->
+  <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+
+    
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

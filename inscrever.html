@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head> <!-- Cabeçalho da pagina -->
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- Estilo customizado -->
+    <link rel="stylesheet" type="text/css" href="css/estiloInscrever.css">
+
+    <!-- Definir o titulo da pagina e o icone que aparece no inicio da pagina -->
+    <title>Inscrever-se - Sportifai</title>
+    <link rel="icon" href="imagens/icon.png">
+
+</head> <!-- Fim do cabeçalho da pagina -->
+
+<body onresize="console.log('Tamanho da tela: ' + window.innerWidth)">
+    <div class="container">
+        
+        <div class="form"> <!-- Inicio do formulario de inscrição -->
+            <form action="">
+                <div class="form-header">
+                    <div class="title">
+                        <a href="index.html">
+                            <img 
+                            id="logo"
+                            src="imagens/icon.png" 
+                            width="80"
+                            onmouseover="trocarImagem()"
+                            onmouseout="voltaImagem()"
+                            >
+                        </a>
+                        <h1>Se inscreva e comece a curtir</h1>
+
+                    </div>
+
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Primeiro nome</label>
+                        <input type="text" name="firstname" id="firstname" placeholder="Digite seu primeiro nome"
+                            required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="lastname">Sobrenome</label>
+                        <input type="text" name="lastname" id="lastname" placeholder="Digite seu sobrenome" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="number">Celular</label>
+                        <input type="tel" name="number" id="number" placeholder="(xx) xxxx-xxxx" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input type="password" name="password" id="password" placeholder="Digite sua senha" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="Confirmpassword">Confirme sua senha</label>
+                        <input type="password" name="Confirmpassword" id="Confirmpassword"
+                            placeholder="Digite sua senha" required>
+                    </div>
+                </div>
+
+                <div class="gender-inputs">
+                    <div class="gender-title">
+                        <h6> Gênero</h6>
+                    </div>
+
+                    <div class="gender-group" onchange="console.log('Escolha para a opção genero modificada')">
+                        <div class="gender-input">
+                            <input type="radio" id="female" name="gender">
+                            <label for="female">Feminino</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input type="radio" id="male" name="gender">
+                            <label for="male">Masculino</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input type="radio" id="others" name="gender">
+                            <label for="others">Outros</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input type="radio" id="none" name="gender">
+                            <label for="none">Prefiro não dizer</label>
+                        </div>
+                    </div>
+
+                    <div class="gender-title">
+                        <h6>Interesses</h6>
+                    </div>
+                    <div class="gender-group" onchange="console.log('Escolha para a opção interesses modificada')">
+                        <div class="gender-input">
+                            <input type="checkbox" id="female" name="gender">
+                            <label for="female">Conhecer novas músicas</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input type="checkbox" id="male" name="gender">
+                            <label for="male">Curtir as melhores playlist</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input type="checkbox" id="others" name="gender">
+                            <label for="others">Seguir meu artista</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input type="checkbox" id="none" name="gender">
+                            <label for="none">Outros</label>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="inscrever-button">
+                    <button type="button" onclick="validarEExibirSaudacao()"><a href="">Inscrever-se</a></button>
+                </div>
+
+
+            </form> <!-- Fim do formulario de inscrição -->
+
+        </div>
+
+    </div>
+
+    <!-- Inclusão do JavaScript -->
+    <script src="javascript/funcoes.js"></script>
+
+</body>
+
+
+
+
+</html>

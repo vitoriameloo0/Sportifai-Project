@@ -1,0 +1,176 @@
+html, body, #top5{
+    height: 100%;
+    
+}
+
+body  {
+    background: url(../imagens/capa.png),
+            url(../imagens/ruido.png),
+            linear-gradient(50deg, #ff4169, #7c26f8);
+
+    background-attachment: fixed;     
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+nav.navbar-transparente {
+    padding: 15px 0px;
+    background: rgb(0, 0, 0, 0.6);
+
+}
+
+.caixa  {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#top5 {  
+    overflow-x: hidden;
+    padding: 100px 0px 30px 0px;
+    
+}
+
+
+h1{
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
+    text-align: center;
+    color: white;
+}
+
+
+/* Estilização geral da seção */
+#melhoresMusicas {
+    
+    padding: 50px 20px;
+    font-family: Arial, sans-serif;
+}
+
+#melhoresMusicas h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 50px;
+    color: white
+}
+
+/* Estilo do acordeão */
+.accordion-item {
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-header {
+    background-color: #007bff;
+}
+
+.accordion-button {
+    background-color: #7c25f8;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border: none;
+    padding: 15px;
+    transition: background-color 0.3s ease;
+    border-radius: 0;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #7c25f8;
+    color: #fff;
+    font-weight: bold;
+}
+
+.accordion-button:hover {
+    background-color:  #6207e3;
+    color: #fff;
+}
+
+/* Estilo do corpo do acordeão */
+.accordion-body {
+    background-color: #f1f1f1;
+    color: #333;
+    font-size: 1rem;
+    padding: 20px;
+    line-height: 1.5;
+    border-top: 1px solid #ddd;
+}
+
+.accordion-body h5 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #A431A1;
+}
+
+.accordion-body ol {
+    padding-left: 60px;
+}
+
+.accordion-body ol li {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+/* Efeitos de hover na lista de músicas */
+.accordion-body ol li:hover {
+    color: #A332AF;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+    #melhoresMusicas h1 {
+        font-size: 2rem;
+    }
+
+    .accordion-button {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .accordion-body {
+        font-size: 0.9rem;
+    }
+}
+
+
+/*  Rodapé
+-------------------------*/
+footer {
+    background: #000;
+    padding: 50px 0px 20px 0px;
+    position: relative;
+}
+
+footer h4 {
+    color: #919496;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+footer .navbar-nav a  {
+    color: white;
+    font-size: 0.8em;
+}
+footer .navbar-nav a:hover {
+    color: #9bf0e1;
+    text-decoration: none;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+   float: right;
+   margin: 0 5px;
+}
