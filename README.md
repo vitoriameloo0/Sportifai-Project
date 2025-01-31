@@ -31,7 +31,7 @@ As ferramentas utilizadas para desenvolver o projeto:
 [<img loading="lazy" src="https://avatars.githubusercontent.com/u/80923400?v=4" width=115><br><sub> Matheus Prokopowiski </sub>](https://github.com/prokow) |
 | :---: |
 
-## ✒️ Autores
+## ✒️ Autor
 
 | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/95388328?v=4" width=115><br><sub>Vitória Melo </sub>](https://github.com/vitoriameloo0) |   
 | :---: | 
